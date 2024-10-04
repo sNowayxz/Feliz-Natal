@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mensagem para você</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="letreiro" id="letreiro">
+        <h2>
+            <span style="--i:1;">F</span>
+            <span style="--i:2;">E</span>
+            <span style="--i:3;">L</span>
+            <span style="--i:4;">I</span>
+            <span style="--i:5;">Z</span>
+            <span style="--i:6;margin-left: 5vw;">N</span>
+            <span style="--i:7;">A</span>
+            <span style="--i:8;">T</span>
+            <span style="--i:9;">A</span>
+            <span style="--i:10;">L</span>
+        </h2>
+    </div>
+
+    <div class="botao" id="botao" onclick="clique()"><button>Clique aqui!</button></div>
+
+    <footer>
+            Desenvoldido por <strong>Jacildo Furtado</strong>, Boas Festas
+    </footer>
+
+    <script>
+        function clique(){
+            var botao = document.getElementById('botao');
+            var letreiro = document.getElementById('letreiro');
+            
+            botao.style.display = 'none';
+            letreiro.style.display = 'block';
+        }
+    </script>
+</body>
+</html>
